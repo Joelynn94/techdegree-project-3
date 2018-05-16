@@ -31,6 +31,10 @@ ul {
     padding-left: 0;
 }
 
+li {
+    margin: 20px 0 20px 0;
+}
+
 /*================ 
 
 Header Styles 
@@ -82,7 +86,7 @@ fieldset {
 
 label {
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 legend {
@@ -104,14 +108,12 @@ select {
   border: none;
   font-size: 16px;
   height: 50px;
-  margin: 0;
   outline: 0;
   padding: 15px;
   width: 100%;
   background-color: #e8eeef;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
   border-radius: 5px;
 }
 
@@ -135,6 +137,7 @@ input::placeholder {
 
 textarea {
     height: 150px;
+    margin: 10px 0 20px 0;
 }
 
 button {
@@ -157,7 +160,7 @@ button {
 }
 
 .zip {
-    max-width: 45%;
+    max-width: 35%;
 }
 
 
@@ -187,7 +190,7 @@ Media Query
     }
 
     li > label {
-        flex: 1;
+        margin: auto 0;
     }
 
     li > input[type="text"],
@@ -195,7 +198,12 @@ Media Query
     li > input[type="tel"],
     li > textarea,
     li > select {
-        flex: 4;
+        flex-basis: 75%;
+        align-content: flex-start;
+    }
+
+    .zip {
+        margin-right: 40%;
     }
 }
 
